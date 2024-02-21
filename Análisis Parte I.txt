@@ -1,0 +1,19 @@
+Análisis Parte I
+Integrantes:
+-Juan Caviedes
+-Jorge Astudillo
+-Alejandro Otálora
+
+1. UnicaRazon: Se observa que el síntoma es que la clase 'service' posee diferentes responsabilidades y la solución
+es crear la clase 'ProductRepository' para separar las responsabilidades.
+
+2. ExtiendeNoModifiques: Se observa que el síntoma es la clase 'store' donde al crear un nuevo delivery se modifica la clase
+muchas veces, la solución es crear una interfaz que implemente el costo para cada orden de la 'store'.
+
+3. TalPadreTalHijo: Se observa que el síntoma es la clase 'SpecializedTruck' que no respeta que se creo una variable 
+'odometer' para calcular la distancia y crea la suya propia.
+
+4. NoDependasNoNecesitas: Se observa que el síntoma es la interfaz 'iRepository' que obliga a las clases del proyecto a 
+implementar métodos que no usan, la solución es segregar la interfaz en otras.
+
+5. AbstractoBueno: Se observa que el síntoma es que la clase 'ProductRepository' posee todas las responsabilidades y métodos, la solución es crear una interfaz 'iProductRepository' que abstraiga ciertos métodos y crear una nueva clase 'Factory' que se ocupe de otras responsabilidades.
